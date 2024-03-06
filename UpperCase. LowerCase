@@ -1,0 +1,37 @@
+s="Today the Date is 06-03-2024"
+
+words=s.split()
+
+print("Number of words:",len(words))
+
+digits=[]
+
+u_letters=[]
+
+l_letters=[]
+
+spl_chars=[]
+
+for i in s:
+
+if i.isdecimal():
+
+digits.append(i)
+
+elif i.isupper():
+
+u_letters.append(i)
+
+elif i.islower():
+
+l_letters.append(i)
+
+else:
+
+spl_chars.append(i)
+
+print("Number of digits:",len(digits))
+
+print("Number of upper case letters:",len(u_letters))
+
+print("Number of lower case letters:",len(l_letters))
